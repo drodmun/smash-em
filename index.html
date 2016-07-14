@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Smash' Em</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="resource" type="application/l10n" href="locales/locales.ini" />
+    <script type="application/javascript" src="js/lib/l10n.min.js"></script>
+</head>
+
+<body>
+    <div id="counters">
+        <span id="timer">30</span>" - <span data-l10n-id="bugs_killed">Bugs killed</span>: <span class="killed">0</span>
+    </div>
+    <canvas id="screenGame"></canvas>
+    <!-- Add content to the popup -->
+    <div id="gameStart">
+		  <h1 data-l10n-id="title"></h1>
+        <p data-l10n-id="how_many_can_u">How many flies can you smash in 30s?</p>
+        <label id="startGame">
+            <input type="button" value="" class="biohazard" />&nbsp;<span data-l10n-id="start">Start!</span>
+        </label>
+    </div>
+    <!-- Add content to the popup -->
+    <div id="gameEnd">
+        <h1><span data-l10n-id="bugs_killed">Bugs killed</span>: <span class="killed">0</span></h1>
+        <p data-l10n-id="want_to_try">Want to try another 30s?</p>
+        <label id="endGame">
+            <input type="button" value="" class="biohazard" />&nbsp;<span data-l10n-id="again">Again!</span>
+        </label>
+    </div>
+    <script type="text/javascript" data-main="js/init.js" src="js/lib/require.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'smashregular';
+    src: url('../fonts/smash-regular-webfont.eot');
+    src: url('../fonts/smash-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/smash-regular-webfont.woff') format('woff'), url('../fonts/smash-regular-webfont.ttf') format('truetype'), url('../fonts/smash-regular-webfont.svg#smashregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+html,
+body {
+    font-family: 'smashregular';
+    font-size: 4vw;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-touch-action: manipulation;
+    -moz-touch-action: manipulation;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+canvas {
+    top: 0;
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+}
+#gameStart,
+#gameEnd,
+#counters {
+    transform: scale(0.8);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+#counters, #gameEnd {
+    display: none;
+    z-index: 10;
+}
+#gameStart h1 {
+    font-size: 8vw;
+}
+#startGame,
+#startGame > input,
+#endGame,
+#endGame > input {
+    cursor: pointer;
+}
+.biohazard {
+    width: 0;
+    height: 0;
+    border-bottom: 60px solid black;
+    border-top: 60px solid black;
+    border-left: 60px solid yellow;
+    border-right: 60px solid yellow;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    border-radius: 60px;
+}
